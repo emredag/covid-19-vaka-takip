@@ -1,7 +1,7 @@
 function changeFunc() {
   let selectBox = document.getElementById("selectBox");
   let selectedValue = selectBox.options[selectBox.selectedIndex].value;
-  let countryLink = `https://corona.lmao.ninja/v2/countries/${selectedValue}`;
+  let countryLink = `https://disease.sh/v3/covid-19/countries/${selectedValue}`;
 
   fetch(countryLink)
     .then((response) => {
